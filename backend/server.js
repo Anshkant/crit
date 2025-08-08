@@ -10,9 +10,10 @@ const app = express();
 
 // CORS middleware - sirf apne frontend domain ko allow karein
 app.use(cors({
-  origin: 'https://crit-white-x9j4.vercel.app'
+  origin: 'https://crit-t9ln.vercel.app', // your Vercel frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // HTTP methods you allow
+  credentials: true, // if you need to send cookies or auth headers
 }));
-
 // Body parsers
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
