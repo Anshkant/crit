@@ -10,7 +10,7 @@ const app = express();
 
 // CORS middleware - sirf apne frontend domain ko allow karein
 app.use(cors({
-  origin: 'https://crit-t9ln.vercel.app', // your Vercel frontend URL
+  origin: 'https://crit-tyzt.vercel.app', // your Vercel frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // HTTP methods you allow
   credentials: true, // if you need to send cookies or auth headers
 }));
